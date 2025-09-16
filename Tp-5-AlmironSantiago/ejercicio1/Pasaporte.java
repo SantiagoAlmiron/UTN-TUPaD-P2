@@ -16,10 +16,10 @@ public class Pasaporte {
     private Foto foto;
     private Titular titular;
 
-    public Pasaporte(int numero, Date fechaEmision, Foto foto, Titular titular) {
+    public Pasaporte(int numero, Date fechaEmision, Foto foto, Titular titular, int idFoto, String formatoFoto) {
         this.numero = numero;
         this.fechaEmision = fechaEmision;
-        this.foto = foto;
+        this.foto = new Foto(idFoto, formatoFoto); // Composición: Pasaporte crea y posee Foto
         this.titular = titular;
     }
 
@@ -42,10 +42,6 @@ public class Pasaporte {
 
     public Foto getFoto() {
         return foto;
-    }
-
-    public void setFoto(Foto foto) {
-        this.foto = foto;
     }
 
     public Titular getTitular() {

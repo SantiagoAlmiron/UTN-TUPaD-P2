@@ -16,9 +16,8 @@ public class Tp5 {
         System.out.println("=== PRUEBA DE RELACIONES ENTRE CLASES ===");
 
         // Crear objetos
-        Foto foto = new Foto(1001, "JPEG");
         Titular titular = new Titular("Ana García", 30123456);
-        Pasaporte pasaporte = new Pasaporte(987654321, new Date(), foto, titular);
+        Pasaporte pasaporte = new Pasaporte(987654321, new Date(), titular, 1001, "JPG");
 
         // Establecer relación bidireccional
         titular.setPasaporte(pasaporte);

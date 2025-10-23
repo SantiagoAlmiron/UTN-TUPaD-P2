@@ -1,0 +1,12 @@
+## YAML Template.
+---
+# Este es un archivo de prueba YAML
+nombre: Mouse
+precio: 5000
+categoria: Periféricos
+
+# Lista de productos
+productos:
+  - Teclado
+  - Monitor
+  - Auriculares
